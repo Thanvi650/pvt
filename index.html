@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title>PVT</title>
+</head>
+<body>
+
+  <h3>Password Visibility Toggle</h3>
+
+  <form>
+    <label>Password:</label>
+    <input type="password" id="password">
+    <br><br>
+
+    <input type="checkbox" onclick="Pass()">
+    <label>Show Password</label>
+  </form>
+
+  <script>
+    function Pass() {
+      var pwd = document.getElementById("password");
+
+      if (pwd.type === "password") {
+        pwd.type = "text";
+      } else {
+        pwd.type = "password";
+      }
+    }
+  </script>
+
+</body>
+</html>
